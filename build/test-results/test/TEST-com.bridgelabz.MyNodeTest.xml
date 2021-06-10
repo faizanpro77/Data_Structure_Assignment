@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.bridgelabz.MyNodeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-10T12:04:19" hostname="DESKTOP-I19OHT9" time="208.114">
+  <properties/>
+  <testcase name="givenNumber_whenLinked_returnTrue" classname="com.bridgelabz.MyNodeTest" time="208.114"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
