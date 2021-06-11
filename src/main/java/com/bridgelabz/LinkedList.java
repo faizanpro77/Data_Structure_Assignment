@@ -36,12 +36,23 @@ public class LinkedList<E> {
         newNode.setNext(tempNode);
     }
 
-    public E pop() {
+    public void popFirstElement() {
        INode<E> tempNode  = head.getNext();
-        E key = head.getKey();
         head = tempNode;
-        return key;
     }
+
+    public void popLastElement() {
+        INode<E> currentNode = head;
+        INode<E> previousNode = null;
+        while (currentNode.getNext() != null) {
+            previousNode = currentNode;
+            currentNode = currentNode.getNext();
+        }
+        previousNode.setNext(null);
+        tail = previousNode;
+    }
+
+
 
     public void printNodes() {
         INode<E> tempNode = head;

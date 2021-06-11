@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelabz.LinkedListTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-11T12:27:37" hostname="DESKTOP-I19OHT9" time="0.024">
+<testsuite name="com.bridgelabz.LinkedListTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-11T13:11:44" hostname="DESKTOP-I19OHT9" time="0.016">
   <properties/>
-  <testcase name="givenFirstElementWhenDeletedShouldPassedLinkedListResult" classname="com.bridgelabz.LinkedListTest" time="0.024"/>
-  <system-out><![CDATA[30->70
+  <testcase name="givenLastElementWhenDeletedShouldPassedLinkedListResult" classname="com.bridgelabz.LinkedListTest" time="0.016"/>
+  <system-out><![CDATA[56->30
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
