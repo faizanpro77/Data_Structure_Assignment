@@ -52,6 +52,15 @@ public class LinkedList<E> {
         tail = previousNode;
     }
 
+    public boolean searchByElement(E key) {
+        INode<E> tempNode = head;
+        while (tempNode != null && tempNode.getNext() != null) {
+            if(tempNode.getNext().getKey().equals(key)){
+                return true;
+            }
+        }
+        return false;
+    }
 
 
     public void printNodes() {
