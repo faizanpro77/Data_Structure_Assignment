@@ -30,6 +30,12 @@ public class LinkedList<E> {
         this.tail = myNode;
     }
 
+    public void insert(INode<E> myNode, INode<E> newNode) {
+        INode<E> tempNode = myNode.getNext();
+        myNode.setNext(newNode);
+        newNode.setNext(tempNode);
+    }
+
     public void printNodes() {
         INode<E> tempNode = head;
         while(tempNode.getNext() != null) {
