@@ -1,4 +1,5 @@
-import com.bridgelabz.MyNode;
+package com.bridgelabz;
+
 import org.junit.Assert;
 import org.junit.Test;
 
