@@ -88,22 +88,24 @@ public class MyLinkedListTest {
 
     @Test
     public void SearchDataNodeForGivenDataIfFoundShouldInsertGivenNodeAndReturnTrue() {
-        MyNode<Integer> myFirstNode = new MyNode<>(70);
+        MyNode<Integer> myFirstNode = new MyNode<>(56);
         MyNode<Integer> mySecondNode = new MyNode<>(30);
-        MyNode<Integer> myThirdNode = new MyNode<>(56);
+        MyNode<Integer> myThirdNode = new MyNode<>(70);
         MyNode<Integer> myFourthNode = new MyNode<>(40);
         MyLinkedList<Integer> myLinkedList = new MyLinkedList<Integer>();
-        myLinkedList.addFirst(myFirstNode);
-        myLinkedList.addFirst(mySecondNode);
-        myLinkedList.addFirst(myThirdNode);
+        myLinkedList.addLast(myFirstNode);
+        myLinkedList.addLast(mySecondNode);
+        myLinkedList.addLast(myThirdNode);
         INode searchNode= myLinkedList.searchNode(30);
         myLinkedList.insertNode(searchNode, myFourthNode);
 
         myLinkedList.printNodes();
 
-        boolean result = (myLinkedList.head.equals(myThirdNode) && myLinkedList.head.getNext().equals(searchNode)
+        boolean result = (myLinkedList.head.equals(myFirstNode) && myLinkedList.head.getNext().equals(searchNode)
                 && myLinkedList.head.getNext().getNext().equals(myFourthNode)
-                && myLinkedList.tail.equals(myFirstNode));
+                && myLinkedList.tail.equals(myThirdNode));
         Assert.assertEquals(true, result);
     }
+
+
 }

@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelabz.MyLinkedListTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2021-06-14T19:16:46" hostname="DESKTOP-I19OHT9" time="0.029">
+<testsuite name="com.bridgelabz.MyLinkedListTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-14T19:31:42" hostname="DESKTOP-I19OHT9" time="0.015">
   <properties/>
-  <testcase name="SearchDataNodeForGivenDataIfFoundShouldInsertGivenNodeAndReturnTrue" classname="com.bridgelabz.MyLinkedListTest" time="0.019"/>
-  <testcase name="SearchNodeForGivenDataIfFoundShouldReturnTrue" classname="com.bridgelabz.MyLinkedListTest" time="0.001"/>
-  <testcase name="GivenThreeNumbersWhenAddedToLinkedListShouldAddedtoTop" classname="com.bridgelabz.MyLinkedListTest" time="0.0"/>
-  <testcase name="PopNodeFromLastShouldReturnTrue" classname="com.bridgelabz.MyLinkedListTest" time="0.0"/>
-  <testcase name="GivenThreeNumbersWhenAddedToLinkedListShouldAddedtoBottom" classname="com.bridgelabz.MyLinkedListTest" time="0.0"/>
-  <testcase name="GivenANodeInsertedInBetweenResultingNodesReturnTrue" classname="com.bridgelabz.MyLinkedListTest" time="0.0"/>
-  <testcase name="PopNodeFromFrontShouldReturnTrue" classname="com.bridgelabz.MyLinkedListTest" time="0.0"/>
+  <testcase name="SearchDataNodeForGivenDataIfFoundShouldInsertGivenNodeAndReturnTrue" classname="com.bridgelabz.MyLinkedListTest" time="0.015"/>
   <system-out><![CDATA[56->30->40->70
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
