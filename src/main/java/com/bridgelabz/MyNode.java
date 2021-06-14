@@ -1,28 +1,34 @@
 package com.bridgelabz;
 
-public class MyNode<E> implements INode<E> {
+public class MyNode<T> implements INode<T>{
+    private T data;
+    private INode next;
 
-    public E key;
-    public MyNode<E> next;
-
-    public MyNode(E key) {
-        this.key = key;
-        this.next = null;
+    MyNode() {
     }
 
-    public E getKey() {
-        return key;
+    public MyNode(T data) {
+        this.setData(data);
+        this.setNext(null);
+    }
+    @Override
+    public  T getData() {
+        return data;
+    }
+    @Override
+    public void setData(T data) {
+        this.data = data;
     }
 
-    public void setKey(E key) {
-        this.key = key;
-    }
-
-    public INode<E> getNext() {
+    public INode getNext() {
         return next;
     }
 
-    public void setNext(INode<E> next) {
-        this.next = (MyNode<E>) next;
+    public void setNext(INode next) {
+        this.next = next;
+    }
+
+    public void printWelcomeMessage() {
+        System.out.println("Welcome to the Data Structure Problem");
     }
 }

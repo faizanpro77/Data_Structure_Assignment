@@ -1,8 +1,12 @@
 package com.bridgelabz;
 
-public interface INode<E>{
-    E getKey();
-    void setKey(E key);
-    INode<E> getNext();
-    void setNext(INode<E> next);
+public interface INode<T> {
+    void setData(T data);
+
+    T getData();
+
+    void setNext(INode next);
+
+    INode getNext();
+
 }
