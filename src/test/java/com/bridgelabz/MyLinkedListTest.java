@@ -6,7 +6,7 @@ import org.junit.Test;
 public class MyLinkedListTest {
 
     @Test
-    public void GivenThreeNumbersWhenAddedToLinkedListShouldAddedtoTop() {
+    public void GivenThreeNumbersWhenAddedToLinkedListShouldAddedToTop() {
         MyNode<Integer> myFirstNode = new MyNode<>(70);
         MyNode<Integer> mySecondNode = new MyNode<>(30);
         MyNode<Integer> myThirdNode = new MyNode<>(56);
@@ -20,7 +20,7 @@ public class MyLinkedListTest {
     }
 
     @Test
-    public void GivenThreeNumbersWhenAddedToLinkedListShouldAddedtoBottom() {
+    public void GivenThreeNumbersWhenAddedToLinkedListShouldAddedToBottom() {
         MyNode<Integer> myFirstNode = new MyNode<>(56);
         MyNode<Integer> mySecondNode = new MyNode<>(30);
         MyNode<Integer> myThirdNode = new MyNode<>(70);
@@ -62,15 +62,16 @@ public class MyLinkedListTest {
 
     @Test
     public void PopNodeFromLastShouldReturnTrue() {
-        MyNode<Integer> myFirstNode = new MyNode<>(70);
+        MyNode<Integer> myFirstNode = new MyNode<>(56);
         MyNode<Integer> mySecondNode = new MyNode<>(30);
-        MyNode<Integer> myThirdNode = new MyNode<>(56);
+        MyNode<Integer> myThirdNode = new MyNode<>(70);
         MyLinkedList<Integer> myLinkedList = new MyLinkedList<Integer>();
-        myLinkedList.addFirst(myFirstNode);
-        myLinkedList.addFirst(mySecondNode);
-        myLinkedList.addFirst(myThirdNode);
-        INode<Integer> deletedNode = myLinkedList.popLast();
-        Assert.assertEquals(deletedNode, myFirstNode);
+        myLinkedList.addLast(myFirstNode);
+        myLinkedList.addLast(mySecondNode);
+        myLinkedList.addLast(myThirdNode);
+        INode<Integer> lastNodes = myLinkedList.popLast();
+        myLinkedList.printNodes();
+        Assert.assertEquals(mySecondNode, lastNodes);
     }
 
     @Test
@@ -107,5 +108,27 @@ public class MyLinkedListTest {
         Assert.assertEquals(true, result);
     }
 
+    @Test
+    public void SearchDataNodeForGivenDataIfFoundThenDeleteShouldShowSizeAndReturnTrue() {
+        MyNode<Integer> myFirstNode = new MyNode<>(56);
+        MyNode<Integer> mySecondNode = new MyNode<>(30);
+        MyNode<Integer> myThirdNode = new MyNode<>(70);
+        MyNode<Integer> myFourthNode = new MyNode<>(40);
+        MyLinkedList<Integer> myLinkedList = new MyLinkedList<Integer>();
+        myLinkedList.addLast(myFirstNode);
+        myLinkedList.addLast(mySecondNode);
+        myLinkedList.addLast(myThirdNode);
+        myLinkedList.addLast(myFourthNode);
+        INode searchNode= myLinkedList.searchNode(40);
+        INode<Integer> lastNodes = myLinkedList.popLast();
 
+        myLinkedList.printNodes();
+        myLinkedList.size();
+
+        boolean result = (myLinkedList.head.equals(myFirstNode) && myLinkedList.head.getNext().equals(mySecondNode)
+                && myLinkedList.head.getNext().getNext().equals(myThirdNode)
+                && myLinkedList.tail.equals(myThirdNode));
+        Assert.assertEquals(true, result);
+
+    }
 }

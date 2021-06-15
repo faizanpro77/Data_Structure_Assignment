@@ -51,7 +51,7 @@ public class MyLinkedList<T> {
             tempNode = tempNode.getNext();
         }
         this.tail = tempNode;
-        tempNode = tempNode.getNext();
+        tempNode.setNext(null);
         return tempNode;
     }
 
@@ -64,6 +64,16 @@ public class MyLinkedList<T> {
             tempNode = tempNode.getNext();
         }
         return null;
+    }
+
+    public void size() {
+        int count = 0;
+        INode<T> tempNode = head;
+        while(tempNode != null) {
+            count++;
+            tempNode = tempNode.getNext();
+        }
+        System.out.println("size of link list : " + count);
     }
 
     public void printNodes() {

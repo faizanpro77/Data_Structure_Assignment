@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelabz.MyLinkedListTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-14T19:31:42" hostname="DESKTOP-I19OHT9" time="0.015">
+<testsuite name="com.bridgelabz.MyLinkedListTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-15T04:23:33" hostname="DESKTOP-I19OHT9" time="0.039">
   <properties/>
-  <testcase name="SearchDataNodeForGivenDataIfFoundShouldInsertGivenNodeAndReturnTrue" classname="com.bridgelabz.MyLinkedListTest" time="0.015"/>
-  <system-out><![CDATA[56->30->40->70
+  <testcase name="SearchDataNodeForGivenDataIfFoundThenDeleteShouldShowSizeAndReturnTrue" classname="com.bridgelabz.MyLinkedListTest" time="0.039"/>
+  <system-out><![CDATA[56->30->70
+size of link list : 3
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
