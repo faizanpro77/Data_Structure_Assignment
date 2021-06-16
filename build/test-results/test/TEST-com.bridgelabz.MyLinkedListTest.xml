@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelabz.MyLinkedListTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-15T04:23:33" hostname="DESKTOP-I19OHT9" time="0.039">
+<testsuite name="com.bridgelabz.MyLinkedListTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2021-06-16T05:37:25" hostname="DESKTOP-I19OHT9" time="0.066">
   <properties/>
-  <testcase name="SearchDataNodeForGivenDataIfFoundThenDeleteShouldShowSizeAndReturnTrue" classname="com.bridgelabz.MyLinkedListTest" time="0.039"/>
-  <system-out><![CDATA[56->30->70
+  <testcase name="SearchDataNodeForGivenDataIfFoundShouldInsertGivenNodeAndReturnTrue" classname="com.bridgelabz.MyLinkedListTest" time="0.016"/>
+  <testcase name="SearchNodeForGivenDataIfFoundShouldReturnTrue" classname="com.bridgelabz.MyLinkedListTest" time="0.001"/>
+  <testcase name="GivenThreeNumbersWhenAddedToLinkedListShouldAddedToTop" classname="com.bridgelabz.MyLinkedListTest" time="0.0"/>
+  <testcase name="PopNodeFromLastShouldReturnTrue" classname="com.bridgelabz.MyLinkedListTest" time="0.002"/>
+  <testcase name="SearchDataNodeForGivenDataIfFoundThenDeleteShouldShowSizeAndReturnTrue" classname="com.bridgelabz.MyLinkedListTest" time="0.036"/>
+  <testcase name="IfLInkedListIsInAscendingOrderReturnTrue" classname="com.bridgelabz.MyLinkedListTest" time="0.001"/>
+  <testcase name="GivenThreeNumbersWhenAddedToLinkedListShouldAddedToBottom" classname="com.bridgelabz.MyLinkedListTest" time="0.001"/>
+  <testcase name="GivenANodeInsertedInBetweenResultingNodesReturnTrue" classname="com.bridgelabz.MyLinkedListTest" time="0.001"/>
+  <testcase name="PopNodeFromFrontShouldReturnTrue" classname="com.bridgelabz.MyLinkedListTest" time="0.001"/>
+  <system-out><![CDATA[56->30->40->70
+56->30
+56->30->70
 size of link list : 3
+30->40->56->70
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

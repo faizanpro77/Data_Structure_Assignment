@@ -4,11 +4,6 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class MyNodeTest {
-    @Test
-    public void givenCallShouldPrintWelcomeMessage() {
-        MyNode myFirstNode = new MyNode();
-        myFirstNode.printWelcomeMessage();
-    }
 
     @Test
     public void GivenThreeNumbersWhenLinkedShouldPassLinkedListTest() {

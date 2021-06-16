@@ -76,6 +76,27 @@ public class MyLinkedList<T> {
         System.out.println("size of link list : " + count);
     }
 
+    public void sortedLinkedList(INode<Integer> newNode) {
+        INode<T> tempNode = head;
+        INode<T> prevNode = null;
+
+        while (tempNode != null && (newNode.getData()).compareTo((Integer) tempNode.getData()) > 0) {
+            prevNode = tempNode;
+            tempNode = tempNode.getNext();
+        }
+
+        if (prevNode == null) {
+            this.head = (INode<T>) newNode;
+        } else {
+            prevNode.setNext(newNode);
+        }
+        newNode.setNext(tempNode);
+        while (tempNode != null) {
+            this.tail = tempNode;
+            tempNode = tempNode.getNext();
+        }
+    }
+
     public void printNodes() {
         INode<T> tempNode = head;
         while(tempNode.getNext() != null) {
